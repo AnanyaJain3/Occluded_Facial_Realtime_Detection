@@ -2,9 +2,13 @@
 
 *Dataset and Models - https://drive.google.com/drive/folders/1_0GHVNCEpMjbGgt04sXqjHvaPakmxHZP?usp=share_link*
 
+***
+
 ## *Face Detection*
 
 Face detection is similar to object detection. It is the process of automatically detecting the location of faces and localizing by drawing a bounding box in the image. Top, left, bottom, and right coordinates of the face are returned by the face detection algorithm MTCNN (Multi-Task Cascaded Convolutional Neural Network)
+
+***
 
 ## *Facial Landmark Detection*
 
@@ -12,9 +16,13 @@ Facial landmarks are the spatial points in a human face. The number of spatial p
 
 After identifying facial keypoints, the distance between these points is measured. This value is called facial features. These features are used to classify a face.
 
+***
+
 ## *Face Alignment*
 
 The faces can be aligned using fiducial points. This is done to make face images clicked from different angle face straight forward. Then the features extracted are matched with a template. The aligned faces can be used for comparison. The aligned face is the output of MTCNN, and is given as input to FaceNet
+
+***
 
 ## *Face Recognition Using FaceNet Model*
 
@@ -71,9 +79,24 @@ Choosing the correct image pairs is extremely important as there will be a lot o
 Eq(1) means that given an anchor image of person A, we want to find a positive image of A such that the distance between those two images is largest. Eq(2) means that given an anchor image A, we want to find a negative image such that the distance between those two images is smallest So, we are just selecting the hard positives and hard negatives here. This approach helps us in speeding convergence as our model learns useful representations.
 The inventors of FaceNet used mini-batches consisting of 40 positives and randomly selected negative embeddings. The minimum and maximum distances were calculated for each mini-batch to create triplets.
 
+***
+
 ## **Face Verification**
 
 Face verification compares the facial embeddings of all trained images with the given image to find matches. Finding whether two images belong to the same person is 1:1 mapping.
 
+***
+
 ## **Face Clustering**
 Face clustering is the process of grouping images of the same person together for albums. It answers the question, "Are there similar faces?" The embeddings of faces can be extracted, and a clustering algorithm such as K-means can be used to group the faces of the same person together
+
+***
+
+# References
+
+1) http://arxiv.org/abs/1604.02878
+2) Deep Learning for Computer Vision, Rajalingappaa Shanmugamani, Packt Publishing, Jan 2018
+3) https://github.com/davidsandberg/facenet
+4) https://arxiv.org/pdf/1503.03832.pdf
+5) https://www.kaggle.com/yhuan95/face-recognition-with-facenet
+6) https://www.youtube.com/watch?v=d2XB5-tuCWU
