@@ -68,13 +68,10 @@ The face embeddings of sizes 1×1×128 are generated from the L2 normalization l
 
 The embeddings of the same faces are called positives, and the embeddings of different faces are called negatives. The face being analyzed is called the anchor. To calculate the loss, a triplet consisting of an anchor, a positive, and a negative embedding is formed, and their Euclidean distances are analyzed. The learning objective of FaceNet is to minimize the distance between an anchor and a positive, and maximize the distance between the anchor and a negative. A training triplet contains three samples: anchor, positive, and negative (A, P, N). Any triplet loss embedding network objective is to learn an embedding such that
 
-<img src="https://github.com/AnanyaJain3/Occluded_Facial_Realtime_Detection/blob/main/image/RRKOCal.giff" alt="lpastar" width="400"/>
-
 ## **Triplet Selection**
 
 Choosing the correct image pairs is extremely important as there will be a lot of image pairs that will satisfy this condition. The model won't learn much from them and will also converge slowly because of that. To ensure fast convergence, it is crucial to select triplets that violate the triplet constraint.
 
-<img src="https://github.com/AnanyaJain3/Occluded_Facial_Realtime_Detection/blob/main/image/gc5MvR5.gif" alt="lpastar" width="400"/>
 
 Eq(1) means that given an anchor image of person A, we want to find a positive image of A such that the distance between those two images is largest. Eq(2) means that given an anchor image A, we want to find a negative image such that the distance between those two images is smallest So, we are just selecting the hard positives and hard negatives here. This approach helps us in speeding convergence as our model learns useful representations.
 The inventors of FaceNet used mini-batches consisting of 40 positives and randomly selected negative embeddings. The minimum and maximum distances were calculated for each mini-batch to create triplets.
