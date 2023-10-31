@@ -1,5 +1,7 @@
 # Designing and implementing a low-power multi-camera-based human detection system on low-power edge devices that addresses the challenges created by occlusions and rapid changes in positions during human detection.
 
+*Dataset and Models - https://drive.google.com/drive/folders/1_0GHVNCEpMjbGgt04sXqjHvaPakmxHZP?usp=share_link*
+
 ## *Face Detection*
 
 Face detection is similar to object detection. It is the process of automatically detecting the location of faces and localizing by drawing a bounding box in the image. Top, left, bottom, and right coordinates of the face are returned by the face detection algorithm MTCNN (Multi-Task Cascaded Convolutional Neural Network)
