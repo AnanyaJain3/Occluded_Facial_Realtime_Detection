@@ -36,23 +36,25 @@ The two architectures differ in the number of parameters used and the Floating P
 
 The Zeiler and Fergus CNN architecture consists of 22 layers and trains on 140 million parameters at 1.6 billion FLOPS per image.
 
-<img src="https://github.com/AnanyaJain3/Spacecraft-Trajectory-Optimization/blob/main/animations/Astar.gif" alt="lpastar" width="400"/>
+<img src="https://github.com/AnanyaJain3/Occluded_Facial_Realtime_Detection/blob/main/image/yyQEgwc-2.png" alt="lpastar" width="400"/>
 
 **NN2: Inception Model Architecture Based on GoogleNet**
 
 This model has 20× fewer parameters (around 6.6 million to 7.5 million) and 5× fewer FLOPS (around 500 million to 1.6 billion).
 
-<img src="https://github.com/AnanyaJain3/Spacecraft-Trajectory-Optimization/blob/main/animations/Astar.gif" alt="lpastar" width="400"/>
+<img src="https://github.com/AnanyaJain3/Occluded_Facial_Realtime_Detection/blob/main/image/rD5QyDZ.png" alt="lpastar" width="400"/>
 
 **NN4**
 
 This network has an input size of 96x96 and requires only 285 million FLOPS. It's suitable for mobile devices.
 
+<img src="https://github.com/AnanyaJain3/Occluded_Facial_Realtime_Detection/blob/main/image/3i9oznA.png" alt="lpastar" width="400"/>
+
 ## *Face Embedding*
 
 The face embeddings of sizes 1×1×128 are generated from the L2 normalization layer of the deep CNN. This embedding is used in face verification and face clustering
 
-<img src="https://github.com/AnanyaJain3/Spacecraft-Trajectory-Optimization/blob/main/animations/Astar.gif" alt="lpastar" width="400"/>
+<img src="https://github.com/AnanyaJain3/Occluded_Facial_Realtime_Detection/blob/main/image/O3Spw9G.png" alt="lpastar" width="400"/>
 
 ## **The Triplet Loss**
 
