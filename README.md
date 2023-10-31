@@ -8,6 +8,7 @@
 
 Face detection is similar to object detection. It is the process of automatically detecting the location of faces and localizing by drawing a bounding box in the image. Top, left, bottom, and right coordinates of the face are returned by the face detection algorithm MTCNN (Multi-Task Cascaded Convolutional Neural Network)
 
+- faster with cuda implementation  -  https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
 ***
 
 ## *Facial Landmark Detection*
