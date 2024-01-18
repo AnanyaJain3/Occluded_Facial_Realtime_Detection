@@ -1,1 +1,2 @@
-
+1 - https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/GoogLeNet.py
+2 - https://github.com/conan7882/GoogLeNet-Inception/blob/master/src/models/inception_module.py
