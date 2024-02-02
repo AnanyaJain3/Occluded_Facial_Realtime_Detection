@@ -99,3 +99,5 @@ Face clustering is the process of grouping images of the same person together fo
 5) https://www.kaggle.com/yhuan95/face-recognition-with-facenet
 6) https://www.youtube.com/watch?v=d2XB5-tuCWU
 7) https://erwanscornet.github.io/teaching/CNN.pdf
+8) https://arxiv.org/pdf/2109.03672v2.pdf
+9) https://github.com/ekremerakin/RealWorldOccludedFaces
